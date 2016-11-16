@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="add_phone.js"></script>
+	<title>Add a new phone</title>
+
+	<style>
+		
+	</style>
+</head>
+
+<header>
+	<h2>Add a new phone</h2>
+</header>
+
+<body>
+	<form action="http://localhost:8080/rest/index.html">
+		Picture URL<br>
+		<input type="url" id="imageAdd" style="width: 200px"><br>
+		Manufacturer<br>
+		<input type="text" id="manuAdd"><br>
+		Model<br>
+		<input type="text" id="modelAdd"><br>
+		Color<br>
+		<input type="text" id="colorAdd"><br>
+		Year<br>
+		<input type="text" id="yearAdd"><br>
+		Description (max. 200 characters)<br>
+		<textarea id="descAdd" maxlength="200" style="width: 200px; height: 100px"></textarea><br>
+		<input type="submit" id="addButton" onclick="addPhone()" value="Add">
+	</form>
+</body>
+
+</html>

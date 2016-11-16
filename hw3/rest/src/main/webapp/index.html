@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	<title>Phone catalog</title>
+
+	<style>
+		table, td, th {
+			font-size: 25px;
+			column-size: 150px;
+			text-align: center;
+			border: 1px solid black;
+		}
+		
+		img {
+			height: 100px;
+			width: 100px;
+		}
+	</style>
+</head>
+
+<header>
+	<center>
+		<h1>Phones</h1>
+	</center>
+</header>
+
+<nav>
+	<input type="text" position="relative" left="50px" name="searchText" id="searchText">
+	<button id="searchButton" position="relative" left="100px" onclick="getSearchedData()">Search</button>
+	
+	<form action="http://localhost:8080/rest/add_phone.html">
+		<input type="submit" left="100px" value="Add a new phone">
+	</form>
+</nav>
+
+<body>	
+	<center>
+		<button id="buttonPhones" onclick="getData()" value="0">All phones</button>
+		<br>
+		<br>
+		<table id="phonesTable">
+			<colgroup>
+				<col width="150px">
+				<col width="150px">
+				<col width="150px">
+				<col width="150px">
+			</colgroup>	
+		</table>
+	</center>
+</body>
+
+</html>
